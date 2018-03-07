@@ -22,7 +22,8 @@
   },
   "release": {
     "npmPublish": false,
-    "verifyConditions": ["@semantic-release/github"],
+    "verifyConditions": ["@semantic-release/github", "@semantic-release/git"],
+    "prepare": ["@semantic-release/npm", "@semantic-release/git"],
     "publish": ["@semantic-release/github"]
   }
 }
