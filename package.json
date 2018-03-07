@@ -1,6 +1,6 @@
 {
   "name": "kraken",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "dependencies": {
     "react": "^16.2.0",
@@ -23,8 +23,16 @@
   },
   "release": {
     "npmPublish": false,
-    "verifyConditions": ["@semantic-release/github", "@semantic-release/git"],
-    "prepare": ["@semantic-release/npm", "@semantic-release/git"],
-    "publish": ["@semantic-release/github"]
+    "verifyConditions": [
+      "@semantic-release/github",
+      "@semantic-release/git"
+    ],
+    "prepare": [
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ],
+    "publish": [
+      "@semantic-release/github"
+    ]
   }
 }
